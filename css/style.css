@@ -116,6 +116,52 @@
     color: #ff3c3c;
   }
 
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .form input,
+  .form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    outline: 2px solid #ff3c3c;
+  }
+
+  .form button {
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff3c3c, #cc0000);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 60, 60, 0.4);
+  }
+  
+  .form button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 60, 60, 0.6);
+  }
+  
+  .form button:active {
+    transform: scale(0.97);
+  }
+  
+  .form button:hover::after {
+    margin-left: 5px;
+  }
+
   ::selection {
     background: #ff3c3c;
     color: #fff;
